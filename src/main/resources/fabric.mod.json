@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "blueberriesmod",
+	"version": "${version}",
+	"name": "Blueberries Mod",
+	"description": "This is a mod adding in blueberries to Minecraft",
+	"authors": [
+		"GothSquid"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blueberriesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gothsquid.blueberriesmod.BlueberriesMod"
+		],
+		"fabric-datagen": [
+			"gothsquid.blueberriesmod.BlueberriesModDataGenerator"
+		],
+		"client": [
+			"gothsquid.blueberriesmod.BlueberriesModClient"
+		]
+	},
+	"mixins": [
+		"blueberriesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

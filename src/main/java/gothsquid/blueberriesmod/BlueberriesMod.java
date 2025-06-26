@@ -1,5 +1,8 @@
 package gothsquid.blueberriesmod;
 
+import gothsquid.blueberriesmod.block.ModBlocks;
+import gothsquid.blueberriesmod.item.ModItems;
+import gothsquid.blueberriesmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class BlueberriesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 
 	}
 }

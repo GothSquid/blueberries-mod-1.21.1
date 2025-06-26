@@ -1,0 +1,6 @@
+{
+    "parent": "blueberriesmod:item/blueberry_bow",
+    "textures": {
+        "layer0": "blueberriesmod:item/blueberry_bow_pulling_2"
+    }
+}

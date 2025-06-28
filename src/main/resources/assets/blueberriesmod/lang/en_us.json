@@ -1,9 +1,17 @@
 {
   "block.blueberriesmod.blueberry_bush": "Blueberry Bush",
+
+  "effect.blueberriesmod.sticky": "Sticky",
+
   "item.blueberriesmod.blueberries": "Blueberries",
   "item.blueberriesmod.blueberry_bow": "Blueberry Bow",
   "item.blueberriesmod.blueberry_cheesecake": "Blueberry Cheesecake",
   "item.blueberriesmod.blueberry_pie": "Blueberry Pie",
+  "item.blueberriesmod.fermented_blueberry": "Fermented Blueberry",
+
+  "item.minecraft.potion.effect.blueberry_wine": "Blueberry Wine",
+  "item.minecraft.splash_potion.effect.blueberry_wine": "Blueberry Wine",
+  "item.minecraft.lingering_potion.effect.blueberry_wine": "Blueberry Wine",
 
   "itemgroup.blueberriesmod.blueberry_items": "Blueberry Items"
 }

@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item BLUEBERRY_BOW = registerItem("blueberry_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
 
+    public static final Item FERMENTED_BLUEBERRY = registerItem("fermented_blueberry",
+            new Item(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BlueberriesMod.MOD_ID, name), item);

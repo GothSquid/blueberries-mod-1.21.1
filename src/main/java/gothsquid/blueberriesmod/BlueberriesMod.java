@@ -2,6 +2,7 @@ package gothsquid.blueberriesmod;
 
 import gothsquid.blueberriesmod.block.ModBlocks;
 import gothsquid.blueberriesmod.effect.ModEffects;
+import gothsquid.blueberriesmod.item.ModItemGroups;
 import gothsquid.blueberriesmod.item.ModItems;
 import gothsquid.blueberriesmod.potion.ModPotions;
 import gothsquid.blueberriesmod.world.gen.ModWorldGeneration;
@@ -18,6 +19,7 @@ public class BlueberriesMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModWorldGeneration.generateModWorldGen();

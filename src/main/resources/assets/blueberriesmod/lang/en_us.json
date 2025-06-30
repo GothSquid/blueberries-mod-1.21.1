@@ -3,15 +3,26 @@
 
   "effect.blueberriesmod.sticky": "Sticky",
 
+  "item.blueberriesmod.applewood_cider": "Applewood Cider",
+  "item.blueberriesmod.beer_glass": "Beer Glass",
   "item.blueberriesmod.blueberries": "Blueberries",
   "item.blueberriesmod.blueberry_bow": "Blueberry Bow",
   "item.blueberriesmod.blueberry_cheesecake": "Blueberry Cheesecake",
   "item.blueberriesmod.blueberry_pie": "Blueberry Pie",
+  "item.blueberriesmod.blueberry_wheat_ale": "Blueberry Wheat Ale",
   "item.blueberriesmod.fermented_blueberry": "Fermented Blueberry",
+  "item.blueberriesmod.water_filled_beer_glass": "Water Filled Beer Glass",
+  "item.blueberriesmod.ghastly_gose": "Ghastly Gose",
+  "item.blueberriesmod.golden_lager": "Golden Lager",
+  "item.blueberriesmod.infinity_ink_ipa": "Infinity Ink IPA",
+  "item.blueberriesmod.pumpkin_porter": "Pumpkin Porter",
+  "item.blueberriesmod.redstone_stout": "Redstone Stout",
+  "item.blueberriesmod.sweet_berry_sour": "Sweet Berry Sour",
 
+  "item.minecraft.lingering_potion.effect.blueberry_wine": "Blueberry Wine",
   "item.minecraft.potion.effect.blueberry_wine": "Blueberry Wine",
   "item.minecraft.splash_potion.effect.blueberry_wine": "Blueberry Wine",
-  "item.minecraft.lingering_potion.effect.blueberry_wine": "Blueberry Wine",
 
-  "itemgroup.blueberriesmod.blueberry_items": "Blueberry Items"
+  "itemgroup.blueberriesmod.blueberry_items": "Blueberry Items",
+  "itemgroup.blueberriesmod.brewery_items": "Brewery Items"
 }

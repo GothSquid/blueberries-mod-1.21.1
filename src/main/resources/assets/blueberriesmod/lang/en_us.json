@@ -1,6 +1,7 @@
 {
   "block.blueberriesmod.blueberry_bush": "Blueberry Bush",
 
+  "effect.blueberriesmod.knowledge": "Knowledge",
   "effect.blueberriesmod.sticky": "Sticky",
 
   "item.blueberriesmod.applewood_cider": "Applewood Cider",
@@ -11,13 +12,15 @@
   "item.blueberriesmod.blueberry_pie": "Blueberry Pie",
   "item.blueberriesmod.blueberry_wheat_ale": "Blueberry Wheat Ale",
   "item.blueberriesmod.fermented_blueberry": "Fermented Blueberry",
-  "item.blueberriesmod.water_filled_beer_glass": "Water Filled Beer Glass",
   "item.blueberriesmod.ghastly_gose": "Ghastly Gose",
   "item.blueberriesmod.golden_lager": "Golden Lager",
   "item.blueberriesmod.infinity_ink_ipa": "Infinity Ink IPA",
+  "item.blueberriesmod.merlins_mead": "Merlin's Mead",
+  "item.blueberriesmod.pearl_pilsner": "Pearl Pilsner",
   "item.blueberriesmod.pumpkin_porter": "Pumpkin Porter",
   "item.blueberriesmod.redstone_stout": "Redstone Stout",
   "item.blueberriesmod.sweet_berry_sour": "Sweet Berry Sour",
+  "item.blueberriesmod.water_filled_beer_glass": "Water Filled Beer Glass",
 
   "item.minecraft.lingering_potion.effect.blueberry_wine": "Blueberry Wine",
   "item.minecraft.potion.effect.blueberry_wine": "Blueberry Wine",

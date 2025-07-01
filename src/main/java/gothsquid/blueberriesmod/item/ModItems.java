@@ -4,6 +4,8 @@ import gothsquid.blueberriesmod.BlueberriesMod;
 import gothsquid.blueberriesmod.block.ModBlocks;
 import gothsquid.blueberriesmod.item.custom.BeerGlassItem;
 import gothsquid.blueberriesmod.item.custom.DrinkableBeerItem;
+import gothsquid.blueberriesmod.item.custom.MerlinsMeadItem;
+import gothsquid.blueberriesmod.item.custom.PearlPilsnerItem;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
@@ -56,6 +58,12 @@ public class ModItems {
 
     public static final Item GOLDEN_LAGER = registerItem("golden_lager",
             new DrinkableBeerItem(new Item.Settings().maxCount(1).food(ModFoodComponents.GOLDEN_LAGER_COMPONENT)));
+
+    public static final Item PEARL_PILSNER = registerItem("pearl_pilsner",
+            new PearlPilsnerItem(new Item.Settings().maxCount(1).food(ModFoodComponents.PEARL_PILSNER_COMPONENT)));
+
+    public static final Item MERLINS_MEAD = registerItem("merlins_mead",
+            new MerlinsMeadItem(new Item.Settings().maxCount(1).food(ModFoodComponents.MERLINS_MEAD_COMPONENT)));
 
 
     private static Item registerItem(String name, Item item) {

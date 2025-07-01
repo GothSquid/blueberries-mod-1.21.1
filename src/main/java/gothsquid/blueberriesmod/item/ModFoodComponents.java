@@ -58,7 +58,7 @@ public class ModFoodComponents {
     public static final FoodComponent APPLEWOOD_CIDER_COMPONENT = new FoodComponent.Builder()
             .nutrition(6)
             .saturationModifier(0.1F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1200, 0), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 1200, 1), 1.0F)
             .alwaysEdible()
             .build();
 
@@ -80,6 +80,19 @@ public class ModFoodComponents {
             .nutrition(6)
             .saturationModifier(0.1F)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodComponent PEARL_PILSNER_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(0.1F)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodComponent MERLINS_MEAD_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(0.1F)
+            .statusEffect(new StatusEffectInstance(ModEffects.KNOWLEDGE, 120, 0), 1.0F)
             .alwaysEdible()
             .build();
 }

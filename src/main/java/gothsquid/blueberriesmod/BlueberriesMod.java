@@ -29,6 +29,5 @@ public class BlueberriesMod implements ModInitializer {
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.WATER, ModItems.FERMENTED_BLUEBERRY, ModPotions.BLUEBERRY_WINE);
 		});
-
 	}
 }

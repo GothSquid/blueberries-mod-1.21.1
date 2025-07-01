@@ -17,6 +17,10 @@ public class ModEffects {
                             Identifier.of(BlueberriesMod.MOD_ID, "sticky"),-0.25F,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final RegistryEntry<StatusEffect> KNOWLEDGE = registerStatusEffect("knowledge",
+            new KnowledgeEffect(StatusEffectCategory.BENEFICIAL, 0xb27516));
+
+
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(BlueberriesMod.MOD_ID, name), statusEffect);
     }

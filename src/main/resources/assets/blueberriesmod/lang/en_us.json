@@ -27,5 +27,17 @@
   "item.minecraft.splash_potion.effect.blueberry_wine": "Blueberry Wine",
 
   "itemgroup.blueberriesmod.blueberry_items": "Blueberry Items",
-  "itemgroup.blueberriesmod.brewery_items": "Brewery Items"
+  "itemgroup.blueberriesmod.brewery_items": "Brewery Items",
+
+  "tooltip.blueberriesmod.blueberry_wheat_ale.tooltip": "§9Sticky (01:00)§r",
+  "tooltip.blueberriesmod.sweet_berry_sour.tooltip": "§9Fire Resistance (01:00)§r",
+  "tooltip.blueberriesmod.pumpkin_porter.tooltip": "§9Night Vision (01:00)§r",
+  "tooltip.blueberriesmod.ghastly_gose.tooltip": "§9Levitation (00:15)§r",
+  "tooltip.blueberriesmod.applewood_cider.tooltip": "§9Jump Boost II (01:00)§r",
+  "tooltip.blueberriesmod.infinity_ink_ipa.tooltip": "§9Water Breathing (01:00)§r",
+  "tooltip.blueberriesmod.redstone_stout.tooltip": "§9Haste (01:00)§r",
+  "tooltip.blueberriesmod.golden_lager.tooltip": "§9Regeneration (00:30)§r",
+  "tooltip.blueberriesmod.pearl_pilsner.tooltip": "§2Time to go home§r",
+  "tooltip.blueberriesmod.merlins_mead.tooltip": "§6Knowledge for the Multi-Dimensional Master§r"
+
 }

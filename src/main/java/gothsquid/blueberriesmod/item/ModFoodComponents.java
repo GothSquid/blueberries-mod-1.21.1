@@ -72,7 +72,7 @@ public class ModFoodComponents {
     public static final FoodComponent REDSTONE_STOUT_COMPONENT = new FoodComponent.Builder()
             .nutrition(6)
             .saturationModifier(0.1F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 1200, 0), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 1200, 0), 1.0F)
             .alwaysEdible()
             .build();
 

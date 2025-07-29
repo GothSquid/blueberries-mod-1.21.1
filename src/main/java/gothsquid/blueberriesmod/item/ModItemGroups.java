@@ -1,6 +1,7 @@
 package gothsquid.blueberriesmod.item;
 
 import gothsquid.blueberriesmod.BlueberriesMod;
+import gothsquid.blueberriesmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -29,6 +30,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BEER_GLASS);
                         entries.add(ModItems.WATER_FILLED_BEER_GLASS);
+                        entries.add(ModBlocks.KEG);
                         entries.add(ModItems.APPLEWOOD_CIDER);
                         entries.add(ModItems.BLUEBERRY_WHEAT_ALE);
                         entries.add(ModItems.GHASTLY_GOSE);

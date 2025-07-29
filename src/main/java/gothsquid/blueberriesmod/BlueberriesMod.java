@@ -1,10 +1,13 @@
 package gothsquid.blueberriesmod;
 
 import gothsquid.blueberriesmod.block.ModBlocks;
+import gothsquid.blueberriesmod.block.entity.ModBlockEntities;
 import gothsquid.blueberriesmod.effect.ModEffects;
 import gothsquid.blueberriesmod.item.ModItemGroups;
 import gothsquid.blueberriesmod.item.ModItems;
 import gothsquid.blueberriesmod.potion.ModPotions;
+import gothsquid.blueberriesmod.recipe.ModRecipes;
+import gothsquid.blueberriesmod.screen.ModScreenHandlers;
 import gothsquid.blueberriesmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -25,6 +28,9 @@ public class BlueberriesMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
+		ModRecipes.registerRecipes();
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.WATER, ModItems.FERMENTED_BLUEBERRY, ModPotions.BLUEBERRY_WINE);

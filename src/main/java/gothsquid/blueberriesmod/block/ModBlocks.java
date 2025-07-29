@@ -2,6 +2,7 @@ package gothsquid.blueberriesmod.block;
 
 import gothsquid.blueberriesmod.BlueberriesMod;
 import gothsquid.blueberriesmod.block.custom.BlueberryBushBlock;
+import gothsquid.blueberriesmod.block.custom.KegBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -15,6 +16,9 @@ public class ModBlocks {
 
     public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
             new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final Block KEG = registerBlock("keg",
+            new KegBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(BlueberriesMod.MOD_ID, name), block);

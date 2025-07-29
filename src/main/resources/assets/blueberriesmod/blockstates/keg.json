@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "blueberriesmod:block/keg",
+      "y": 90
+    },
+    "facing=north": {
+        "model": "blueberriesmod:block/keg"
+    },
+    "facing=south": {
+      "model": "blueberriesmod:block/keg",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "blueberriesmod:block/keg",
+      "y": 270
+    }
+  }
+}

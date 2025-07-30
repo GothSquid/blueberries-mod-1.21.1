@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BLUEBERRY_WHEAT_ALE);
                         entries.add(ModItems.GHASTLY_GOSE);
                         entries.add(ModItems.GOLDEN_LAGER);
+                        entries.add(ModItems.INFERNO_BREW);
                         entries.add(ModItems.INFINITY_INK_IPA);
                         entries.add(ModItems.MERLINS_MEAD);
                         entries.add(ModItems.PEARL_PILSNER);

@@ -37,7 +37,7 @@ public class ModFoodComponents {
     public static final FoodComponent SWEET_BERRY_SOUR_COMPONENT = new FoodComponent.Builder()
             .nutrition(6)
             .saturationModifier(0.1F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1200, 0), 1.0F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1200, 0), 1.0F)
             .alwaysEdible()
             .build();
 
@@ -93,6 +93,13 @@ public class ModFoodComponents {
             .nutrition(6)
             .saturationModifier(0.1F)
             .statusEffect(new StatusEffectInstance(ModEffects.KNOWLEDGE, 120, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodComponent INFERNO_BREW_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(0.1F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1200, 0), 1.0F)
             .alwaysEdible()
             .build();
 }

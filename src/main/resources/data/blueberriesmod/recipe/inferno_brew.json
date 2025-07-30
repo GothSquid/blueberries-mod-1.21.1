@@ -1,0 +1,18 @@
+{
+  "type": "blueberriesmod:keg",
+  "ingredients": [
+    {
+      "item": "blueberriesmod:water_filled_beer_glass"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "blueberriesmod:inferno_brew"
+  }
+}

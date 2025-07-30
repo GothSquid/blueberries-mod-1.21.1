@@ -6,10 +6,7 @@ import gothsquid.blueberriesmod.item.custom.BeerGlassItem;
 import gothsquid.blueberriesmod.item.custom.DrinkableBeerItem;
 import gothsquid.blueberriesmod.item.custom.MerlinsMeadItem;
 import gothsquid.blueberriesmod.item.custom.PearlPilsnerItem;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BowItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -126,6 +123,15 @@ public class ModItems {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
                     tooltip.add(Text.translatable("tooltip.blueberriesmod.merlins_mead.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
+    public static final Item INFERNO_BREW = registerItem("inferno_brew",
+            new DrinkableBeerItem(new Item.Settings().maxCount(1).food(ModFoodComponents.INFERNO_BREW_COMPONENT)){
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.blueberriesmod.inferno_brew.tooltip"));
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });

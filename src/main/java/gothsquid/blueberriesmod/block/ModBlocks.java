@@ -6,10 +6,12 @@ import gothsquid.blueberriesmod.block.custom.KegBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -18,7 +20,11 @@ public class ModBlocks {
             new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block KEG = registerBlock("keg",
-            new KegBlock(AbstractBlock.Settings.create().nonOpaque()));
+            new KegBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()
+                    .strength(2.5f)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .mapColor(MapColor.OAK_TAN)));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(BlueberriesMod.MOD_ID, name), block);

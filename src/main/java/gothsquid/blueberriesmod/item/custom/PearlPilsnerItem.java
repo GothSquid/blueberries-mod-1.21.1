@@ -1,5 +1,8 @@
 package gothsquid.blueberriesmod.item.custom;
 
+import net.minecraft.block.BedBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.RespawnAnchorBlock;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
@@ -20,25 +23,32 @@ public class PearlPilsnerItem extends DrinkableBeerItem {
         ItemStack result = super.finishUsing(stack, world, user);
 
         if (!world.isClient && user instanceof ServerPlayerEntity player) {
-            ServerWorld currentWorld = player.getServerWorld();
-            ServerWorld targetWorld = currentWorld; // default
+            ServerWorld targetWorld = player.getServerWorld();
             BlockPos targetPos = null;
 
-            // Try player's personal respawn (bed)
-            if (player.getSpawnPointPosition() != null && player.getSpawnPointDimension() != null) {
-                targetWorld = player.getServer().getWorld(player.getSpawnPointDimension());
-                if (targetWorld != null) {
-                    targetPos = player.getSpawnPointPosition();
+            // Attempt to use player's personal spawn point (bed or respawn anchor)
+            BlockPos spawnPos = player.getSpawnPointPosition();
+            if (spawnPos != null && player.getSpawnPointDimension() != null) {
+                ServerWorld spawnWorld = player.getServer().getWorld(player.getSpawnPointDimension());
+
+                if (spawnWorld != null) {
+                    Block block = spawnWorld.getBlockState(spawnPos).getBlock();
+
+                    // Check if the block is still a valid respawn point (bed or respawn anchor)
+                    if (block instanceof BedBlock || block instanceof RespawnAnchorBlock) {
+                        targetWorld = spawnWorld;
+                        targetPos = spawnPos;
+                    }
                 }
             }
 
-            // Fallback to Overworld spawn
+            // Fallback to Overworld spawn if bed/anchor is missing or invalid
             if (targetPos == null) {
                 targetWorld = player.getServer().getOverworld();
                 targetPos = targetWorld.getSpawnPos();
             }
 
-            // Teleport cross-dimension
+            // Teleport the player
             if (targetWorld != null && targetPos != null) {
                 Vec3d teleportPos = new Vec3d(
                         targetPos.getX() + 0.5,
@@ -59,5 +69,4 @@ public class PearlPilsnerItem extends DrinkableBeerItem {
 
         return result;
     }
-
 }

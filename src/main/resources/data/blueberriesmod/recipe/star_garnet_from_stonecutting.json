@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "blueberriesmod:raw_star_garnet"
+  },
+  "result": {
+    "count": 1,
+    "id": "blueberriesmod:star_garnet"
+  }
+}

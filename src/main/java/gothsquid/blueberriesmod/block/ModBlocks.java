@@ -3,16 +3,14 @@ package gothsquid.blueberriesmod.block;
 import gothsquid.blueberriesmod.BlueberriesMod;
 import gothsquid.blueberriesmod.block.custom.BlueberryBushBlock;
 import gothsquid.blueberriesmod.block.custom.KegBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -25,6 +23,25 @@ public class ModBlocks {
                     .strength(2.5f)
                     .sounds(BlockSoundGroup.WOOD)
                     .mapColor(MapColor.OAK_TAN)));
+
+    public static final Block STAR_GARNET_BLOCK = registerBlock("star_garnet_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(5.0F, 6.0F)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+    public static final Block STAR_GARNET_ORE = registerBlock("star_garnet_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    AbstractBlock.Settings.create()
+                    .strength(3.0F, 3.0F)
+                    .requiresTool()));
+
+    public static final Block STAR_GARNET_DEEPSLATE_ORE = registerBlock("star_garnet_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 7),
+                    AbstractBlock.Settings.create()
+                            .strength(4.5F, 3.0F)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(BlueberriesMod.MOD_ID, name), block);

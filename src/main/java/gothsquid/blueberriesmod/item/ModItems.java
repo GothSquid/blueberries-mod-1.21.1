@@ -136,6 +136,41 @@ public class ModItems {
                 }
             });
 
+    public static final Item RAW_STAR_GARNET = registerItem("raw_star_garnet",
+            new Item(new Item.Settings()));
+
+    public static final Item STAR_GARNET = registerItem("star_garnet",
+            new Item(new Item.Settings()));
+
+    public static final Item STAR_GARNET_SWORD = registerItem("star_garnet_sword",
+            new SwordItem(ModToolMaterials.STAR_GARNET, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STAR_GARNET,3,-2.4f))));
+
+    public static final Item STAR_GARNET_AXE = registerItem("star_garnet_axe",
+            new AxeItem(ModToolMaterials.STAR_GARNET, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STAR_GARNET,5.0f,-3.0f))));
+
+    public static final Item STAR_GARNET_PICKAXE = registerItem("star_garnet_pickaxe",
+            new PickaxeItem(ModToolMaterials.STAR_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STAR_GARNET,1.0f,-2.8f))));
+
+    public static final Item STAR_GARNET_HOE = registerItem("star_garnet_hoe",
+            new HoeItem(ModToolMaterials.STAR_GARNET, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.STAR_GARNET,-3.0f,0.0f))));
+
+    public static final Item STAR_GARNET_SHOVEL = registerItem("star_garnet_shovel",
+            new ShovelItem(ModToolMaterials.STAR_GARNET, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STAR_GARNET,1.5f,-3.0f))));
+
+    public static final Item STAR_GARNET_UPGRADE_SMITHING_TEMPLATE = registerItem("star_garnet_upgrade_smithing_template",
+            new Item(new Item.Settings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.blueberriesmod.star_garnet_upgrade_smithing_template.tooltip"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BlueberriesMod.MOD_ID, name), item);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "addition": {
+    "item": "blueberriesmod:star_garnet"
+  },
+  "template": {
+    "item": "blueberriesmod:star_garnet_upgrade_smithing_template"
+  },
+  "result": {
+    "count": 1,
+    "id": "blueberriesmod:star_garnet_pickaxe"
+  }
+}

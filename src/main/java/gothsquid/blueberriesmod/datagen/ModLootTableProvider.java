@@ -27,6 +27,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.STAR_GARNET_BLOCK);
+        addDrop(ModBlocks.STAR_GARNET_ORE, oreDrops(ModBlocks.STAR_GARNET_ORE, ModItems.RAW_STAR_GARNET));
+        addDrop(ModBlocks.STAR_GARNET_DEEPSLATE_ORE, oreDrops(ModBlocks.STAR_GARNET_DEEPSLATE_ORE, ModItems.RAW_STAR_GARNET));
+
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
 
         this.addDrop(

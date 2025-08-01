@@ -5,6 +5,7 @@ import gothsquid.blueberriesmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ShovelItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -42,6 +43,25 @@ public class ModItemGroups {
                         entries.add(ModItems.PUMPKIN_PORTER);
                         entries.add(ModItems.REDSTONE_STOUT);
                         entries.add(ModItems.SWEET_BERRY_SOUR);
+                    }).build());
+
+    public static final ItemGroup STAR_GARNET_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(BlueberriesMod.MOD_ID, "star_garnet_items"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.STAR_GARNET))
+                    .displayName(Text.translatable("itemgroup.blueberriesmod.star_garnet_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.RAW_STAR_GARNET);
+                        entries.add(ModItems.STAR_GARNET);
+                        entries.add(ModBlocks.STAR_GARNET_BLOCK);
+                        entries.add(ModBlocks.STAR_GARNET_ORE);
+                        entries.add(ModBlocks.STAR_GARNET_DEEPSLATE_ORE);
+                        entries.add(ModItems.STAR_GARNET_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.STAR_GARNET_SWORD);
+                        entries.add(ModItems.STAR_GARNET_PICKAXE);
+                        entries.add(ModItems.STAR_GARNET_SHOVEL);
+                        entries.add(ModItems.STAR_GARNET_AXE);
+                        entries.add(ModItems.STAR_GARNET_HOE);
+
                     }).build());
 
     public static void registerItemGroups() {

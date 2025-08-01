@@ -1,6 +1,9 @@
 {
   "block.blueberriesmod.blueberry_bush": "Blueberry Bush",
   "block.blueberriesmod.keg": "Keg",
+  "block.blueberriesmod.star_garnet_block": "Star Garnet Block",
+  "block.blueberriesmod.star_garnet_ore": "Star Garnet Ore",
+  "block.blueberriesmod.star_garnet_deepslate_ore": "Star Garnet Deepslate Ore",
 
   "effect.blueberriesmod.knowledge": "Knowledge",
   "effect.blueberriesmod.sticky": "Sticky",
@@ -23,6 +26,15 @@
   "item.blueberriesmod.redstone_stout": "Redstone Stout",
   "item.blueberriesmod.sweet_berry_sour": "Sweet Berry Sour",
   "item.blueberriesmod.water_filled_beer_glass": "Water Filled Beer Glass",
+  "item.blueberriesmod.raw_star_garnet": "Raw Star Garnet",
+  "item.blueberriesmod.star_garnet": "Star Garnet",
+  "item.blueberriesmod.star_garnet_sword": "Star Garnet Sword",
+  "item.blueberriesmod.star_garnet_pickaxe": "Star Garnet Pickaxe",
+  "item.blueberriesmod.star_garnet_shovel": "Star Garnet Shovel",
+  "item.blueberriesmod.star_garnet_axe": "Star Garnet Axe",
+  "item.blueberriesmod.star_garnet_hoe": "Star Garnet Hoe",
+  "item.blueberriesmod.star_garnet_upgrade_smithing_template": "Smithing Template",
+
 
   "item.minecraft.lingering_potion.effect.blueberry_wine": "Blueberry Wine",
   "item.minecraft.potion.effect.blueberry_wine": "Blueberry Wine",
@@ -30,6 +42,7 @@
 
   "itemgroup.blueberriesmod.blueberry_items": "Blueberry Items",
   "itemgroup.blueberriesmod.brewery_items": "Brewery Items",
+  "itemgroup.blueberriesmod.star_garnet_items": "Star Garnet Items",
 
   "tooltip.blueberriesmod.blueberry_wheat_ale.tooltip": "§9Sticky (01:00)§r",
   "tooltip.blueberriesmod.sweet_berry_sour.tooltip": "§9Resistance (01:00)§r",
@@ -41,6 +54,7 @@
   "tooltip.blueberriesmod.redstone_stout.tooltip": "§9Haste (01:00)§r",
   "tooltip.blueberriesmod.golden_lager.tooltip": "§9Regeneration (00:30)§r",
   "tooltip.blueberriesmod.pearl_pilsner.tooltip": "§2Time to go home§r",
-  "tooltip.blueberriesmod.merlins_mead.tooltip": "§6Knowledge for the Multi-Dimensional Master§r"
+  "tooltip.blueberriesmod.merlins_mead.tooltip": "§6Knowledge for the Multi-Dimensional Master§r",
+  "tooltip.blueberriesmod.star_garnet_upgrade_smithing_template.tooltip": "§9Star Garnet Upgrade§r"
 
 }

@@ -15,6 +15,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        this.getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE).add(ModItems.BLUEBERRY_BOW);
+        getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.BLUEBERRY_BOW);
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.STAR_GARNET_SWORD);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.STAR_GARNET_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.STAR_GARNET_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.STAR_GARNET_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.STAR_GARNET_HOE);
     }
 }

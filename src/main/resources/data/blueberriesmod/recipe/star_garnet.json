@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "blueberriesmod:star_garnet_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "blueberriesmod:star_garnet"
+  }
+}

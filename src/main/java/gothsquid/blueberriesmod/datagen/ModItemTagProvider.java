@@ -27,5 +27,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STAR_GARNET_AXE);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.STAR_GARNET_HOE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.STAR_GARNET_HELMET)
+                .add(ModItems.STAR_GARNET_CHESTPLATE)
+                .add(ModItems.STAR_GARNET_LEGGINGS)
+                .add(ModItems.STAR_GARNET_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.STAR_GARNET_HELMET)
+                .add(ModItems.STAR_GARNET_CHESTPLATE)
+                .add(ModItems.STAR_GARNET_LEGGINGS)
+                .add(ModItems.STAR_GARNET_BOOTS);
     }
 }

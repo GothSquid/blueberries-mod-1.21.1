@@ -1,7 +1,9 @@
-// 1.21.1	2025-07-31T20:39:10.9721788	Blueberries Mod/Tags for minecraft:item
+// 1.21.1	2025-08-04T16:32:48.682097	Blueberries Mod/Tags for minecraft:item
 5db0b63d10e82689df283d556242442e5f5139e2 data\minecraft\tags\item\shovels.json
 cf6f629449f1faefb09e8a9bbb9a6ca685d6f514 data\minecraft\tags\item\pickaxes.json
+dc8b647c31b675a8cf24fd226374bee2e1f49997 data\minecraft\tags\item\enchantable\armor.json
 5a5abe07ab5b53de75caad4bdc880cd00e8e0ae0 data\minecraft\tags\item\swords.json
+dc8b647c31b675a8cf24fd226374bee2e1f49997 data\minecraft\tags\item\trimmable_armor.json
 03372831000e0031a442d70f41b495482366d395 data\minecraft\tags\item\hoes.json
 6718fcf9027096454c29687fd2b45caa9f457fdd data\minecraft\tags\item\axes.json
 c4439e3607b18cde2919cf41e95727489decf75b data\minecraft\tags\item\enchantable\bow.json

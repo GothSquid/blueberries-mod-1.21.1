@@ -171,6 +171,22 @@ public class ModItems {
                 }
             });
 
+    public static final Item STAR_GARNET_HELMET = registerItem("star_garnet_helmet",
+            new ArmorItem(ModArmorMaterials.STAR_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+
+    public static final Item STAR_GARNET_CHESTPLATE = registerItem("star_garnet_chestplate",
+            new ArmorItem(ModArmorMaterials.STAR_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+
+    public static final Item STAR_GARNET_LEGGINGS = registerItem("star_garnet_leggings",
+            new ArmorItem(ModArmorMaterials.STAR_GARNET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+
+    public static final Item STAR_GARNET_BOOTS = registerItem("star_garnet_boots",
+            new ArmorItem(ModArmorMaterials.STAR_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(BlueberriesMod.MOD_ID, name), item);

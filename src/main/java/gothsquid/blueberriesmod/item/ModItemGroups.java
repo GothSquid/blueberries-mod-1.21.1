@@ -61,6 +61,10 @@ public class ModItemGroups {
                         entries.add(ModItems.STAR_GARNET_SHOVEL);
                         entries.add(ModItems.STAR_GARNET_AXE);
                         entries.add(ModItems.STAR_GARNET_HOE);
+                        entries.add(ModItems.STAR_GARNET_HELMET);
+                        entries.add(ModItems.STAR_GARNET_CHESTPLATE);
+                        entries.add(ModItems.STAR_GARNET_LEGGINGS);
+                        entries.add(ModItems.STAR_GARNET_BOOTS);
 
                     }).build());
 

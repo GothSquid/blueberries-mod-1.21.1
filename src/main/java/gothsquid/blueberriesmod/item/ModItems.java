@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item BLUEBERRY_PIE = registerItem("blueberry_pie",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_PIE_COMPONENT)));
 
+    public static final Item CREAM_CHEESE = registerItem("cream_cheese",
+            new Item(new Item.Settings().food(ModFoodComponents.CREAM_CHEESE_COMPONENT)));
+
     public static final Item BLUEBERRY_CHEESECAKE = registerItem("blueberry_cheesecake",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_COMPONENT)));
 

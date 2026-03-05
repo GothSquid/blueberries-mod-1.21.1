@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BLUEBERRIES);
                         entries.add(ModItems.FERMENTED_BLUEBERRY);
                         entries.add(ModItems.BLUEBERRY_PIE);
+                        entries.add(ModItems.CREAM_CHEESE);
                         entries.add(ModItems.BLUEBERRY_CHEESECAKE);
                         entries.add(ModItems.BLUEBERRY_BOW);
                     }).build());

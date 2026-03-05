@@ -16,6 +16,11 @@ public class ModFoodComponents {
             .saturationModifier(0.3F)
             .build();
 
+    public static final FoodComponent CREAM_CHEESE_COMPONENT = new FoodComponent.Builder()
+            .nutrition(3)
+            .saturationModifier(0.6F)
+            .build();
+
     public static final FoodComponent BLUEBERRY_CHEESECAKE_COMPONENT = new FoodComponent.Builder()
             .nutrition(8)
             .saturationModifier(1F)

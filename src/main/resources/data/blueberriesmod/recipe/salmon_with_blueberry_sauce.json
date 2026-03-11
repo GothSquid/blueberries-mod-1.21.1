@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "blueberriesmod:blueberries"
+    },
+    {
+      "item": "minecraft:cooked_salmon"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "blueberriesmod:salmon_with_blueberry_sauce"
+  }
+}

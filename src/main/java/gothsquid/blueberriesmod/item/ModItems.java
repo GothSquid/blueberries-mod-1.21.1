@@ -28,6 +28,15 @@ public class ModItems {
     public static final Item BLUEBERRY_CHEESECAKE = registerItem("blueberry_cheesecake",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_COMPONENT)));
 
+    public static final Item BLUEBERRY_MUFFIN = registerItem("blueberry_muffin",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_MUFFIN_COMPONENT)));
+
+    public static final Item SALMON_WITH_BLUEBERRY_SAUCE = registerItem("salmon_with_blueberry_sauce",
+            new Item(new Item.Settings().food(ModFoodComponents.SALMON_WITH_BLUEBERRY_SAUCE_COMPONENT)));
+
+    public static final Item MIXED_BERRIES = registerItem("mixed_berries",
+            new Item(new Item.Settings().maxCount(1).food(ModFoodComponents.MIXED_BERRIES_COMPONENT)));
+
     public static final Item BLUEBERRY_BOW = registerItem("blueberry_bow",
             new BowItem(new Item.Settings().maxDamage(500)));
 

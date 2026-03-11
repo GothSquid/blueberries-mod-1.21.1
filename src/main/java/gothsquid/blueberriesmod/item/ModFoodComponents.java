@@ -4,6 +4,7 @@ import gothsquid.blueberriesmod.effect.ModEffects;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Items;
 
 public class ModFoodComponents {
     public static final FoodComponent BLUEBERRIES_COMPONENT = new FoodComponent.Builder()
@@ -24,6 +25,22 @@ public class ModFoodComponents {
     public static final FoodComponent BLUEBERRY_CHEESECAKE_COMPONENT = new FoodComponent.Builder()
             .nutrition(8)
             .saturationModifier(1F)
+            .build();
+
+    public static final FoodComponent BLUEBERRY_MUFFIN_COMPONENT = new FoodComponent.Builder()
+            .nutrition(8)
+            .saturationModifier(0.3F)
+            .build();
+
+    public static final FoodComponent SALMON_WITH_BLUEBERRY_SAUCE_COMPONENT = new FoodComponent.Builder()
+            .nutrition(8)
+            .saturationModifier(0.8F)
+            .build();
+
+    public static final FoodComponent MIXED_BERRIES_COMPONENT = new FoodComponent.Builder()
+            .nutrition(6)
+            .saturationModifier(0.6F)
+            .usingConvertsTo(Items.BOWL)
             .build();
 
     public static final FoodComponent WATER_FILLED_BEER_GLASS_COMPONENT = new FoodComponent.Builder()
